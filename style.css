@@ -1,47 +1,50 @@
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
-    background-color: #121212;
-    color: white;
+    background-color: #1c1c1c;
+    color: #f0f0f0;
   }
   
   .top-buttons {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
-    gap: 15px;
+    margin-top: 25px;
+    gap: 20px;
   }
   
   .card {
-    padding: 15px 30px;
+    padding: 14px 28px;
     border: none;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: bold;
     color: white;
-    border-radius: 8px;
+    border-radius: 10px;
     cursor: pointer;
   }
   
-  .green { background-color: #4caf50; }
-  .red { background-color: #f44336; }
-  .blue { background-color: #2196f3; }
+  .green { background-color: #28a745; }
+  .red { background-color: #dc3545; }
+  .blue { background-color: #007bff; }
   
   .card:hover {
-    opacity: 0.9;
+    filter: brightness(1.1);
   }
   
   .container {
     margin-top: 30px;
-    background: rgba(0, 0, 0, 0.7);
+    background-color: #2b2b2b;
     border-radius: 10px;
-    max-width: 1000px;
+    max-width: 950px;
     margin-left: auto;
     margin-right: auto;
-    padding: 20px;
+    padding: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
   }
   
   h1 {
     text-align: center;
+    color: #00e0ff;
+    margin-bottom: 25px;
   }
   
   .form-group {
@@ -50,32 +53,45 @@ body {
   
   label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 6px;
+    font-weight: 500;
   }
   
   input, select {
     width: 100%;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 6px;
     border: none;
+    background-color: #3b3b3b;
+    color: white;
   }
   
   button[type="submit"] {
-    background-color: #03a9f4;
+    background-color: #00bcd4;
     color: white;
-    padding: 10px 20px;
+    padding: 10px 22px;
     border: none;
-    border-radius: 6px;
+    border-radius: 8px;
+    font-weight: bold;
     cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0097a7;
   }
   
   button.delete-btn {
     background-color: #e91e63;
     border: none;
-    padding: 5px 10px;
-    border-radius: 4px;
+    padding: 6px 12px;
+    border-radius: 6px;
     cursor: pointer;
     color: white;
+    font-size: 0.9rem;
+  }
+  
+  button.delete-btn:hover {
+    background-color: #d81b60;
   }
   
   .money {
@@ -88,11 +104,15 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #2a2a2a;
+    border-radius: 5px;
+    margin-bottom: 8px;
   }
   
   #transaction-list li.header {
     font-weight: bold;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid #00e0ff;
+    color: #00e0ff;
   }
   
   #transaction-list span {
@@ -102,5 +122,6 @@ body {
   
   #transaction-list span.amount {
     text-align: right;
+    font-weight: bold;
   }
   
